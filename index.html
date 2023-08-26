@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./CSS/index.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="navigationBar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><span><img src="./IMG/logo@2x.png" alt="weather app logo" /></span>
+            Weather
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="searchBar d-flex flex-row m-5">
+        <input
+          id="searchInput"
+          type=" search"
+          class="form-control w-75 rounded-5"
+          placeholder="Search here"
+        />
+        <button id="searchCity" class="btn btn-light ms-3 p2-2 rounded-5">Search</button>
+      </div>
+      <div class="cards">
+        <div class="card-group d-flex gap-2 mt-5">
+          <div class="card w-25">
+            <div class="card-body">
+              <div class="card-title h4 d-flex justify-content-around">
+                <span id="todayId">Today</span>
+                <span id="DateId"></span>
+              </div>
+              <div class="card-text">
+                <div>
+                  <p id="locationCity"></p>
+                  <p id="country"></p>
+
+                  <div class="d-flex justify-content-evenly flex-row">
+                    <p id="tempId"></p>
+                    <p><img src="#" id="iconImage" alt="weather app logo" /></p>
+                  </div>
+
+                  <p id="feelsLike"></p>
+                  <p id="weatherStatus"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                ><span id="humidity"></span>
+                <span
+                  ><img
+                    src="./IMG/icon-umberella.png"
+                    alt="wind direction index"
+                /></span>
+              </small>
+              <small class="text-body-secondary"
+                ><span id="wind"></span>
+                <span
+                  ><img src="./IMG/icon-wind.png" alt="wind direction index"
+                /></span>
+              </small>
+              <small class="text-body-secondary"
+                ><span id="direction"></span>
+                <span
+                  ><img src="./IMG/icon-compass.png" alt="wind direction index"
+                /></span>
+              </small>
+            </div>
+          </div>
+          <div class="card w-25">
+            <div class="card-body">
+              <div class="card-title h4 d-flex justify-content-around">
+                <span id="tomorrowId">Tomorrow</span>
+                <span id="tomorrowDateId"></span>
+              </div>
+              <div class="card-text">
+                <div>
+                  <p id="tomorrowLocationCity"></p>
+                  <p id="tomorrowCountry"></p>
+
+                  <div class="d-flex justify-content-evenly flex-row">
+                    <p id="tomorrowTemp"></p>
+                    <p>
+                      <img src="#" id="tomorrowIcon" alt="weather app logo" />
+                    </p>
+                  </div>
+
+                  <p id="tomorrowFeelsLike"></p>
+                  <p id="tomorrowWeatherStatus"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                ><span id="tomorrowHumidity"></span>
+                <span
+                  ><img
+                    src="./IMG/icon-umberella.png"
+                    alt="wind direction index"
+                /></span>
+              </small>
+              <small class="text-body-secondary"
+                ><span id="tomorrowWind"> </span>
+                <span
+                  ><img src="./IMG/icon-wind.png" alt="wind direction index"
+                /></span>
+              </small>
+              <!-- <small id="tomorrowDirection" class="text-body-secondary"
+                ><span
+                  ><img src="./IMG/icon-compass.png" alt="wind direction index"
+                /></span>
+              </small> -->
+            </div>
+          </div>
+          <!-- <div class="card w-25">
+            <div class="card-body">
+              <div class="card-title h4 d-flex justify-content-around">
+                <span id="afterTommorowId">After Tomorrow</span>
+                <span id="afterTommorowDateId"></span>
+              </div>
+              <div class="card-text">
+                <div>
+                  <p id="afterTommorowlocationCity"></p>
+                  <p id="afterTommorowcountry"></p>
+
+                  <div class="d-flex justify-content-evenly flex-row">
+                    <p id="afterTommorowtempId"></p>
+                    <p>
+                      <img
+                        src="#"
+                        id="afterTommorowiconImage"
+                        alt="weather app logo"
+                      />
+                    </p>
+                  </div>
+
+                  <p id="afterTommorowfeelsLike"></p>
+                  <p id="afterTommorowweatherStatus"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small id="afterTommorowhumidity" class="text-body-secondary"
+                ><span
+                  ><img
+                    src="./IMG/icon-umberella.png"
+                    alt="wind direction index"
+                /></span>
+              </small>
+              <small id="afterTommorowwind" class="text-body-secondary"
+                ><span
+                  ><img src="./IMG/icon-wind.png" alt="wind direction index"
+                /></span>
+              </small>
+              <small id="afterTommorowdirection" class="text-body-secondary"
+                ><span
+                  ><img src="./IMG/icon-compass.png" alt="wind direction index"
+                /></span>
+              </small>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footerPart1">
+          <div class="subscribeBar d-flex flex-row m-5">
+            <input
+              type=" search"
+              class="form-control w-75 rounded-5"
+              placeholder="Enter Your Email to Subscribe..."
+            />
+            <button class="btn btn-light ms-3 p2-2 rounded-5">Subscribe</button>
+          </div>
+          <div class="socialMediaLink">
+            <a
+              href="https://www.linkedin.com/in/mina-nady-523506151/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i></a
+            ><a href="https://github.com/Dr-developer-mina" target="_blank"
+              ><i class="fa-brands fa-github"></i></a
+            ><a href=""></a><a href=""></a>
+          </div>
+        </div>
+        <div class="CopyRights">
+          <p>
+            Copyright 2023 Route Academy.. Designed By Mina Nady. all rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>

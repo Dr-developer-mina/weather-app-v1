@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root {
+  --main-font-color-first: #ff6053 !important;
+  --main-font-color-second: #f7f6f4 !important;
+  --main-font-color-third: #ffa957 !important;
+  --main-font-color-fourth: #ede6cb !important;
+  --main-background-color-main: #393e5b !important;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #393e5b;
+}
+.navbar {
+  background-color: var(--main-background-color-main) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.nav-link {
+  color: var(--main-font-color-third) !important;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+}
+.navbar-brand {
+  color: var(--main-font-color-third) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+}
+
+input {
+  opacity: 0.2;
+}
+
+button {
+  background-color: var(--main-font-color-third) !important;
+  padding: 5px 10px !important;
+  color: var(--main-font-color-fourth) !important;
+}
+.card {
+  background-color: #393e5b;
+  color: white;
+}
+.card-title {
+  color: #ff6053;
+}
+#locationCity,#tomorrowLocationCity {
+  color: var(--main-font-color-third);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#country,#tomorrowCountry {
+  color: var(--main-font-color-third);
+  font-size: 0.8rem;
+}
+.footer {
+  padding: 10px;
+  background-color: var(--main-background-color-main) !important;
+  color:var(--main-font-color-fourth);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#feelsLike {
+  color: var(--main-font-color-first) !important;
+}
+
+#weatherStatus {
+  color: var(--main-font-color-first) !important;
+}
+#wind,
+#humidity,
+#direction ,#tomorrowWind,#tomorrowHumidity {
+  color: #ede6cb !important;
+  padding: 5px;
+}
+#tempId, #tomorrowTemp {
+  font-size: 4.8rem !important;
+  font-weight: 700;
+}
+i{
+  padding: 2px 5px;
+  font-size: 1.5rem;
+  color: #06A3DA;
+}
+a :hover{
+color: #ede6cb;
+}
+.nav-item  :hover{
+  border: 0.5px solid #ff6053;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+button :hover{
+}
+/* Media Query */
+
+/* for Large Screen devices: */
+
+@media (max-width: 1199.98px) {
+}
+/* for Large Screen devices: */
+
+@media (max-width: 991.98px) {
+}
+/* for Tablet devices: */
+
+@media (max-width: 767.98px) {
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
+/* for smartphone devices: */
+@media (max-width: 575.98px) {
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
