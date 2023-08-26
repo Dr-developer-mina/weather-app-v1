@@ -74,7 +74,9 @@ button {
 #feelsLike {
   color: var(--main-font-color-first) !important;
 }
-
+.feels{
+  color:#ffa957;
+}
 #weatherStatus {
   color: var(--main-font-color-first) !important;
 }
@@ -85,7 +87,7 @@ button {
   padding: 5px;
 }
 #tempId, #tomorrowTemp {
-  font-size: 4.8rem !important;
+  font-size: 3.8rem !important;
   font-weight: 700;
 }
 i{
